@@ -1,8 +1,8 @@
-# CSA
+# CSAM
 
-code for: " 基于输入通道拆分的对抗攻击迁移性增强算法" (计算机工程)
+code for: " {Boosting Adversarial Transferability through Adversarial Attack Enhancer" (计算机工程)
 
-## 环境
+## Environment
 
 - nvidia-tensorflow==1.15.4
 
@@ -10,25 +10,26 @@ code for: " 基于输入通道拆分的对抗攻击迁移性增强算法" (计�
 - nump==1.18
 - scipy==1.2.1
 
-## 实验
+## Experiment
 
-### 数据集
+### Dataset
 
-下载 [数据集](https://drive.google.com/open?id=1CfobY6i8BfqfWPHL31FKFDipNjqWwAhS) ，并放在 [dev_data/](https://github.com/jxdaily/CSA/tree/main/dev_data)
+Download [dataset](https://drive.google.com/open?id=1CfobY6i8BfqfWPHL31FKFDipNjqWwAhS) ，and put it into [dev_data/](https://github.com/jxdaily/CSA/tree/main/dev_data)
 
-### 预训练模型
+### Pre-trained model
 
-下载[预训练模型](https://drive.google.com/open?id=10cFNVEhLpCatwECA6SPB-2g0q5zZyfaw)，并放在 [models/](https://github.com/jxdaily/CSA/tree/main/models)
+download [Pre-trained models](https://drive.google.com/open?id=10cFNVEhLpCatwECA6SPB-2g0q5zZyfaw)，and put them into [models/](https://github.com/jxdaily/CSA/tree/main/models)
 
-### 生成对抗样本
+### Generate adversarial examples
 
-`python csa.py`
+`python csam.py`
 
-### 验证
+### Evaluation
 
 `python eval.py`
 
-## 致谢
+## Acknowledgments
 
-代码参考：[SI-NI-FGSM](https://github.com/JHL-HUST/SI-NI-FGSM)
+Reference：[SI-NI-FGSM](https://github.com/JHL-HUST/SI-NI-FGSM)
+
 
