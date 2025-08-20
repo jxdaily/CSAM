@@ -3,10 +3,11 @@ import os
 import numpy as np
 import tensorflow as tf
 import pandas as pd
+from scipy.misc import imread, imsave
 from nets import inception_v3, inception_v4, inception_resnet_v2, resnet_v2
 
 slim = tf.contrib.slim
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 
 checkpoint_path = './models'
 model_checkpoint_map = {
@@ -63,7 +64,7 @@ if __name__ == '__main__':
     batch_shape = [50, 299, 299, 3]
     num_classes = 1001
     tf.logging.set_verbosity(tf.logging.INFO)
-    input_dir = "outputs"
+    input_dir = "icsa"
     with tf.Graph().as_default():
         x_input = tf.placeholder(tf.float32, shape=batch_shape)
 
